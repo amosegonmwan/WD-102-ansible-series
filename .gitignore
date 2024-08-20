@@ -1,0 +1,51 @@
+# .gitignore for Ansible, Terraform, and GitHub project
+
+# Ansible-related
+# Ignore roles downloaded by ansible-galaxy
+roles/
+# Ignore inventory files (if dynamic or sensitive)
+inventory/
+# Ignore Ansible vault password file
+.vault_pass
+# Ignore fact cache
+~/.ansible/
+# Ignore temporary files
+*.retry
+*.log
+
+# Terraform-related
+# Ignore Terraform state files
+*.tfstate
+*.tfstate.*
+# Ignore backup files created by Terraform
+*.backup
+# Ignore .terraform directory where modules and plugins are stored
+.terraform/
+# Ignore Terraform plan files
+*.tfplan
+# Ignore any crash logs
+crash.log
+
+# GitHub-related
+# Ignore GitHub workflows
+.github/workflows/
+# Ignore GitHub personal token (if stored)
+.github_token
+
+# General
+# Ignore sensitive environment variables file
+.env
+# Ignore log files
+*.log
+# Ignore temporary files
+*.tmp
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/Editor-specific files and directories
+.vscode/
+.idea/
+*.swp
+*.suo
+*.user
